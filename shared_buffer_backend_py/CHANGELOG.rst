@@ -2,6 +2,6 @@
 Changelog for package shared_buffer_backend_py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.1.0 (2026-08-23)
+0.1.0 (2026-09-27)
 ------------------
 * Initial release.
