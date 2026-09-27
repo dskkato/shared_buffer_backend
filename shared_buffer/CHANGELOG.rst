@@ -2,6 +2,6 @@
 Changelog for package shared_buffer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2026-09-27)
+------------------
 * Initial release.

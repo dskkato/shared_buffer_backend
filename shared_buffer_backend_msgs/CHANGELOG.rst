@@ -2,6 +2,6 @@
 Changelog for package shared_buffer_backend_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2026-09-27)
+------------------
 * Initial release.
