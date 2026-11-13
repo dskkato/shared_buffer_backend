@@ -94,7 +94,10 @@ std::shared_ptr<void> ShmemBufferBackend::create_descriptor_with_endpoint(
   {
     std::lock_guard<std::mutex> lock(compatibility_mutex_);
     const auto it = compatibility_cache_.find(GidKey(endpoint_info.endpoint_gid));
-    if (it != compatibility_cache_.end() && !it->second) {
+    // Only use shared-memory descriptors for peers confirmed compatible by
+    // on_discovering_endpoint(). A cache miss means the peer has not been
+    // classified yet, so use the CPU path until discovery completes.
+    if (it == compatibility_cache_.end() || !it->second) {
       return nullptr;
     }
   }
